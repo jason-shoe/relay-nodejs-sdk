@@ -1,12 +1,14 @@
 {
-  "name": "generate",
+  "name": "@relay/generate",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "types": "src/types.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "openapi-typescript ./resources/endpoints.json -o ./src/types.ts"
+    "generate": "openapi-typescript ./resources/endpoints.json -o ../api/src/openapi/types.ts",
+    "build": "pnpm generate"
   },
   "keywords": [],
   "author": "",
