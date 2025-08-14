@@ -1,5 +1,1 @@
-import { generateTypes } from "./generateTypes";
-
-generateTypes().then(() => {
-  process.exit(0);
-});
+export * from './types';
