@@ -1,6 +1,6 @@
-# @relay/relay-nodejs-sdk
+# relay-nodejs-sdk
 
-Official Node.js SDK for Relay Delivery API
+Node.js SDK for Relay Delivery API
 
 ## Installation
 
@@ -11,7 +11,7 @@ pnpm add relay-nodejs-sdk
 ## Usage
 
 ```typescript
-import { createRelayClient } from '@relay/relay-nodejs-sdk';
+import { createRelayClient } from 'relay-nodejs-sdk';
 
 // Create a client instance
 const client = createRelayClient({
