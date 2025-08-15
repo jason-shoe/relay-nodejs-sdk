@@ -37,26 +37,26 @@ Ensure you have publish access to the `@relay` organization on npm. Contact your
 
 ### Automated Publishing (Recommended)
 
-The package is automatically published when you push a version tag:
+The packages are automatically published when you push a version tag:
 
-1. **Create a release**:
+1. **Create a release** (from the root directory):
 
    ```bash
-   npm run release:patch  # for patch releases (1.0.0 → 1.0.1)
-   npm run release:minor  # for minor releases (1.0.0 → 1.1.0)
-   npm run release:major  # for major releases (1.0.0 → 2.0.0)
+   pnpm run release:patch  # for patch releases (1.0.0 → 1.0.1)
+   pnpm run release:minor  # for minor releases (1.0.0 → 1.1.0)
+   pnpm run release:major  # for major releases (1.0.0 → 2.0.0)
    ```
 
 2. **The release script will**:
-   - Update the version in `package.json`
-   - Build the package
+   - Update the version in all `package.json` files
+   - Build all packages
    - Commit changes
    - Create and push a git tag
    - Push changes to main branch
 
 3. **GitHub Actions will automatically**:
-   - Build the package
-   - Publish to npm
+   - Build all packages
+   - Publish all packages to npm
    - Create a GitHub release
 
 ### Manual Publishing
@@ -64,11 +64,11 @@ The package is automatically published when you push a version tag:
 If you prefer to publish manually:
 
 ```bash
-# Build the package
+# Build all packages
 pnpm run build
 
-# Publish to npm
-pnpm publish
+# Publish all packages to npm
+pnpm publish --recursive
 ```
 
 ## Version Management
@@ -90,11 +90,16 @@ pnpm publish --tag alpha
 
 ## Package Contents
 
-The published package includes:
+The published packages include:
 
-- `dist/` - Built JavaScript and TypeScript files
-- `README.md` - Package documentation
-- `package.json` - Package metadata
+- **@relay/relay-nodejs-sdk**: Main SDK package
+  - `dist/` - Built JavaScript and TypeScript files
+  - `README.md` - Package documentation
+  - `package.json` - Package metadata
+
+- **@relay/generate**: Type generation package (if published)
+  - Source files and build artifacts
+  - TypeScript definitions
 
 Excluded from the package:
 

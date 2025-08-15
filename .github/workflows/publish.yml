@@ -26,11 +26,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build package
-        run: pnpm run build
+      - name: Build all packages
+        run: pnpm run build --recursive
 
-      - name: Publish to NPM
-        run: pnpm publish --no-git-checks
+      - name: Publish all packages to NPM
+        run: pnpm publish --recursive --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
