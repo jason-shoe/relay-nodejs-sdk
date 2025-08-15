@@ -67,8 +67,8 @@ If you prefer to publish manually:
 # Build all packages
 pnpm run build
 
-# Publish all packages to npm
-pnpm publish --recursive
+# Publish the API package (generate package is private)
+cd src/api && pnpm publish
 ```
 
 ## Version Management
@@ -90,16 +90,14 @@ pnpm publish --tag alpha
 
 ## Package Contents
 
-The published packages include:
+The published package includes:
 
 - **@relay/relay-nodejs-sdk**: Main SDK package
   - `dist/` - Built JavaScript and TypeScript files
   - `README.md` - Package documentation
   - `package.json` - Package metadata
 
-- **@relay/generate**: Type generation package (if published)
-  - Source files and build artifacts
-  - TypeScript definitions
+**Note**: The `@relay/generate` package is marked as private and is not published to npm.
 
 Excluded from the package:
 
