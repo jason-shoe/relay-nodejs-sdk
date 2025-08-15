@@ -32,7 +32,7 @@ jobs:
       - name: Publish packages to NPM
         run: |
           # Only publish the API package since generate is private
-          cd src/api && pnpm publish --no-git-checks --access public
+          cd src/api && pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

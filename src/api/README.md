@@ -5,7 +5,7 @@ Official Node.js SDK for Relay Delivery API
 ## Installation
 
 ```bash
-pnpm add @relay/relay-nodejs-sdk
+pnpm add relay-nodejs-sdk
 ```
 
 ## Usage

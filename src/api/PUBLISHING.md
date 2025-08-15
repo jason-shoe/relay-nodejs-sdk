@@ -120,7 +120,7 @@ Excluded from the package:
 If you need to unpublish a version:
 
 ```bash
-pnpm unpublish @relay/relay-nodejs-sdk@1.0.1
+pnpm unpublish relay-nodejs-sdk@1.0.1
 ```
 
 **Note**: npm only allows unpublishing within 72 hours of publishing.

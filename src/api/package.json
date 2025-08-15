@@ -1,5 +1,5 @@
 {
-  "name": "@relay/relay-nodejs-sdk",
+  "name": "relay-nodejs-sdk",
   "version": "1.0.5",
   "description": "Official Node.js SDK for Relay Delivery API",
   "main": "dist/index.js",
@@ -38,7 +38,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/relay-nodejs-sdk.git"
+    "url": "https://github.com/jasonxu/relay-nodejs-sdk.git"
   },
   "bugs": {
     "url": "https://github.com/your-org/relay-nodejs-sdk/issues"
@@ -55,8 +55,5 @@
   },
   "dependencies": {
     "openapi-fetch": "^0.14.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
