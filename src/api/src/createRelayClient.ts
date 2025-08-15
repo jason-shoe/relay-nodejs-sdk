@@ -4,7 +4,7 @@ import { RelayEnvironment } from './RelayEnvironment';
 
 const BASE_URLS: { [key in RelayEnvironment]: string } = {
   DEV: 'https://dev-api.relay.delivery/v2',
-  PROD: 'https://dev-api.relay.delivery/v2',
+  PROD: 'https://api.relay.delivery/v2',
 };
 
 export type RelayClient = ReturnType<typeof createOpenApiClient<paths>>;
