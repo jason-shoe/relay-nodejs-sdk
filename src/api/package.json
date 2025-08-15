@@ -38,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonxu/relay-nodejs-sdk.git"
+    "url": "https://github.com/jason-shoe/relay-nodejs-sdk"
   },
   "bugs": {
-    "url": "https://github.com/your-org/relay-nodejs-sdk/issues"
+    "url": "https://github.com/jason-shoe/relay-nodejs-sdk/issues"
   },
-  "homepage": "https://github.com/your-org/relay-nodejs-sdk#readme",
+  "homepage": "https://github.com/jason-shoe/relay-nodejs-sdk#readme",
   "engines": {
     "node": ">=16.0.0"
   },
