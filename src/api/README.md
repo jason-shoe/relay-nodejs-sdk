@@ -1,5 +1,7 @@
 # relay-nodejs-sdk
 
+> **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Relay Delivery API. It is not officially affiliated with or endorsed by Relay Delivery.**
+
 Node.js SDK for Relay Delivery API
 
 ## Installation
