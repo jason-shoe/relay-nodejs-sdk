@@ -7,17 +7,17 @@ const BASE_URLS: { [key in RelayEnvironment]: string } = {
   PROD: 'https://dev-api.relay.delivery/v2',
 };
 
+export type RelayClient = ReturnType<typeof createOpenApiClient<paths>>;
+
 export function createRelayClient({
   environment,
   authKey,
 }: {
   environment: RelayEnvironment;
   authKey: string;
-}) {
-  const client: ReturnType<typeof createOpenApiClient<paths>> =
-    createOpenApiClient<paths>({
-      baseUrl: BASE_URLS[environment],
-      headers: { 'x-relay-auth': authKey },
-    });
-  return client;
+}): RelayClient {
+  return createOpenApiClient<paths>({
+    baseUrl: BASE_URLS[environment],
+    headers: { 'x-relay-auth': authKey },
+  });
 }

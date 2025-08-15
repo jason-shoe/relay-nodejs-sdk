@@ -1,4 +1,4 @@
-export { createRelayClient } from './createRelayClient';
+export { createRelayClient, type RelayClient } from './createRelayClient';
 export { RelayEnvironment } from './RelayEnvironment';
 export type {
   paths as RelayPaths,
